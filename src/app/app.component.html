@@ -1,2 +1,10 @@
 <hr>
-<app-details></app-details>
+<br>
+<div class="container text-center">
+  <h1>{{title | uppercase}}</h1>
+<h1>Today : {{today | date : 'dd/MM/yyyy'}}</h1>
+<h1>price : {{price | currency}}</h1>
+<span>
+  Selling price: {{sellingPrice | currency}}, Profit: {{sellingPrice | profit : 10 | currency}}
+</span>
+</div>
