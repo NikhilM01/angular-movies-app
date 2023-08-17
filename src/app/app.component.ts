@@ -8,11 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'movies-app';
 
-  today =new  Date();
-
-  price = 10;
-
- 
-
-  sellingPrice = 15.50;
 }

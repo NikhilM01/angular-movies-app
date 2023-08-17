@@ -1,5 +1,124 @@
-<p>details works!</p>
-
-<app-details-movies></app-details-movies>
+<h1 class="text-warning">Movie Title</h1>
+<hr>
 <br>
-<app-details-reviews></app-details-reviews>
+
+<div class="row">
+    <div class="col-md-6">
+        <iframe width="540" height="360" src="https://www.youtube.com/embed/pBk4NYhWNMM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+    </div>
+
+    <div class="col-md-6">
+        <p class="lead">This is going to be a placeholder for the movie plot.</p>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Stars</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Star-1</li>
+                        <li class="list-group-item">Star-2</li>
+                        <li class="list-group-item">Star-3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Directors</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Director-1</li>
+                        <li class="list-group-item">Director-2</li>
+                        <li class="list-group-item">Director-3</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header">Genres</div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item">Genre-1</li>
+                        <li class="list-group-item">Genre-2</li>
+                        <li class="list-group-item">Genre-3</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<hr>
+<br>
+
+
+
+<!-- Actors Section -->
+<div class="row">
+    <h1 class="text-warning">Actors</h1>
+    <hr>
+    <br>
+
+    <div class="col-md-12 text-center">
+        <app-details-actors></app-details-actors>
+    </div>
+    <br>
+    <div class="text-center">
+        <a class="btn btn-warning" href="">View all Actors</a>
+    </div>
+</div>
+
+<hr><br>
+
+
+<div class="row">
+    <h1 class="text-warning">Reviews</h1>
+    <hr><br>
+    <app-details-reviews></app-details-reviews>
+</div>
+<br>
+<div class="text-center">
+    <a class="btn btn-warning" href="">View all Reviews</a>
+</div>
+<hr>
+<br>
+
+
+<div class="row">
+    <h1 class="text-warning">Similar Movies</h1>
+    <hr><br>
+    <div class="col-md-12 text-center">
+        <app-details-movies></app-details-movies>
+    </div>
+</div>
+
+
+
+
+
+
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    Launch demo modal
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+    
+            <iframe width="100%" height="360" src="https://www.youtube.com/embed/pBk4NYhWNMM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
+        </div>
+        <div class="modal-footer justify-content-center">
+         <b>barbie</b>
+        </div>
+      </div>
+    </div>
+  </div>

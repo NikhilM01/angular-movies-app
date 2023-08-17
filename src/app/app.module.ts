@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { Component, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -15,6 +15,9 @@ import { LoaderComponent } from './components/loader/loader.component';
 import { ModalComponent } from './components/modal/modal.component';
 import { pipe } from 'rxjs';
 import { ProfitPipe } from './pipes/profit.pipe';
+import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
+import { RouterModule } from '@angular/router';
+import { AppRoutesModule } from './modules/app.routes';
 
 @NgModule({
   declarations: [
@@ -31,14 +34,17 @@ import { ProfitPipe } from './pipes/profit.pipe';
     ModalComponent,
 
     //pipes
-    ProfitPipe
+    ProfitPipe,
+     DetailsActorsComponent
 
 
   ],
   imports: [
     BrowserModule,
+    AppRoutesModule,
     AppRoutingModule
   ],
+  
   providers: [],
   bootstrap: [AppComponent]
 })
