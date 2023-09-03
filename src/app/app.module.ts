@@ -18,6 +18,7 @@ import { ProfitPipe } from './pipes/profit.pipe';
 import { DetailsActorsComponent } from './components/details-actors/details-actors.component';
 import { RouterModule } from '@angular/router';
 import { AppRoutesModule } from './modules/app.routes';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -35,17 +36,11 @@ import { AppRoutesModule } from './modules/app.routes';
 
     //pipes
     ProfitPipe,
-     DetailsActorsComponent
-
-
+    DetailsActorsComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutesModule,
-    AppRoutingModule
-  ],
-  
+  imports: [BrowserModule, AppRoutesModule, AppRoutingModule, FormsModule],
+
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

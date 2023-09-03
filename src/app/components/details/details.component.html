@@ -63,7 +63,7 @@
     </div>
     <br>
     <div class="text-center">
-        <a class="btn btn-warning" href="">View all Actors</a>
+        <a class="btn btn-warning" href="" [routerLink]="['/details/actors/'+movieId]">View more</a>
     </div>
 </div>
 
@@ -77,7 +77,7 @@
 </div>
 <br>
 <div class="text-center">
-    <a class="btn btn-warning" href="">View all Reviews</a>
+    <a class="btn btn-warning" href="" [routerLink]="['/details/reviews/'+movieId]">View more</a>
 </div>
 <hr>
 <br>
@@ -89,6 +89,10 @@
     <div class="col-md-12 text-center">
         <app-details-movies></app-details-movies>
     </div>
+    <br>
+    <div class="text-center">
+        <a class="btn btn-warning" href="" [routerLink]="['/details/movies/'+movieId]">View more</a>
+    </div>
 </div>
 
 
@@ -99,26 +103,26 @@
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
     Launch demo modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-    
-            <iframe width="100%" height="360" src="https://www.youtube.com/embed/pBk4NYhWNMM" title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen></iframe>
+</button>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+
+                <iframe width="100%" height="360" src="https://www.youtube.com/embed/pBk4NYhWNMM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+
+            </div>
+            <div class="modal-footer justify-content-center">
+                <b>barbie</b>
+            </div>
         </div>
-        <div class="modal-footer justify-content-center">
-         <b>barbie</b>
-        </div>
-      </div>
     </div>
-  </div>
+</div>
